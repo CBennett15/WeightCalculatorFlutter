@@ -17,69 +17,146 @@ class CalculatorState extends State<Calculator> {
             height: double.infinity,
             width: double.infinity,
             color: Colors.black,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Flexible(
-                  flex: 3,
-                  child: Container(
-                    color: Colors.black,
-                  ),
-                ),
-                Flexible(
-                  flex: 7,
-                  child: Container(
-                    color: Colors.white,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Flexible(
-                          flex: 1,
-                          child: Container(
-                            color: Colors.black12,
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(
-                            color: Colors.black26,
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(
-                            color: Colors.black38,
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(
-                            color: Colors.black54,
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(
-                            color: Colors.black12,
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(
-                            color: Colors.black26,
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(
-                            color: Colors.black38,
-                          ),
-                        ),
-                      ],
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Flexible(
+                    flex: 3,
+                    child: Container(
+                      color: Colors.black,
                     ),
                   ),
-                )
-              ],
+                  Flexible(
+                    flex: 7,
+                    child: Container(
+                      color: Colors.white,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: double.infinity,
+                              width: double.infinity,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Flexible(flex: 1, child: Button("lbs")),
+                                  Flexible(flex: 1, child: Button("kgs")),
+                                ],
+                              ),
+                              color: Colors.black12,
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: double.infinity,
+                              width: double.infinity,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Flexible(flex: 1, child: Button("7")),
+                                  Flexible(flex: 1, child: Button("8")),
+                                  Flexible(flex: 1, child: Button("9")),
+                                  Flexible(flex: 1, child: Button("/")),
+                                ],
+                              ),
+                              color: Colors.black26,
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: double.infinity,
+                              width: double.infinity,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Flexible(flex: 1, child: Button("4")),
+                                  Flexible(flex: 1, child: Button("5")),
+                                  Flexible(flex: 1, child: Button("6")),
+                                  Flexible(flex: 1, child: Button("*")),
+                                ],
+                              ),
+                              color: Colors.black38,
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: double.infinity,
+                              width: double.infinity,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Flexible(flex: 1, child: Button("1")),
+                                  Flexible(flex: 1, child: Button("2")),
+                                  Flexible(flex: 1, child: Button("3")),
+                                  Flexible(flex: 1, child: Button("-")),
+                                ],
+                              ),
+                              color: Colors.black54,
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: double.infinity,
+                              width: double.infinity,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Flexible(flex: 1, child: Button("0")),
+                                  Flexible(flex: 1, child: Button(".")),
+                                  Flexible(flex: 1, child: Button("00")),
+                                  Flexible(flex: 1, child: Button("+")),
+                                ],
+                              ),
+                              color: Colors.black12,
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: double.infinity,
+                              width: double.infinity,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Flexible(flex: 1, child: Button("Clear")),
+                                  Flexible(flex: 1, child: Button("=")),
+                                ],
+                              ),
+                              color: Colors.black26,
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: double.infinity,
+                              width: double.infinity,
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Flexible(flex: 1, child: Button("/ 2.5")),
+                                  Flexible(flex: 1, child: Button("/ 5")),
+                                  Flexible(flex: 1, child: Button("/ 10")),
+                                  Flexible(flex: 1, child: Button("/ 12")),
+                                  Flexible(flex: 1, child: Button("/ 15")),
+                                ],
+                              ),
+                              color: Colors.black38,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
             )));
   }
 }
