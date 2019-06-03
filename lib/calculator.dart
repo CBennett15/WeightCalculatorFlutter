@@ -11,7 +11,7 @@ class CalculatorState extends State<Calculator> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Weight Calculator"),
+          title: Text("Weight Calculator"),
         ),
         body: Container(
             height: double.infinity,
@@ -31,7 +31,7 @@ class CalculatorState extends State<Calculator> {
                   Flexible(
                     flex: 7,
                     child: Container(
-                      color: Colors.white,
+                      color: Colors.black,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -47,7 +47,6 @@ class CalculatorState extends State<Calculator> {
                                   Flexible(flex: 1, child: Button("kgs")),
                                 ],
                               ),
-                              color: Colors.black12,
                             ),
                           ),
                           Flexible(
@@ -64,7 +63,6 @@ class CalculatorState extends State<Calculator> {
                                   Flexible(flex: 1, child: Button("/")),
                                 ],
                               ),
-                              color: Colors.black26,
                             ),
                           ),
                           Flexible(
@@ -81,7 +79,6 @@ class CalculatorState extends State<Calculator> {
                                   Flexible(flex: 1, child: Button("*")),
                                 ],
                               ),
-                              color: Colors.black38,
                             ),
                           ),
                           Flexible(
@@ -98,7 +95,6 @@ class CalculatorState extends State<Calculator> {
                                   Flexible(flex: 1, child: Button("-")),
                                 ],
                               ),
-                              color: Colors.black54,
                             ),
                           ),
                           Flexible(
@@ -115,7 +111,6 @@ class CalculatorState extends State<Calculator> {
                                   Flexible(flex: 1, child: Button("+")),
                                 ],
                               ),
-                              color: Colors.black12,
                             ),
                           ),
                           Flexible(
@@ -130,7 +125,6 @@ class CalculatorState extends State<Calculator> {
                                   Flexible(flex: 1, child: Button("=")),
                                 ],
                               ),
-                              color: Colors.black26,
                             ),
                           ),
                           Flexible(
@@ -148,7 +142,6 @@ class CalculatorState extends State<Calculator> {
                                   Flexible(flex: 1, child: Button("/ 15")),
                                 ],
                               ),
-                              color: Colors.black38,
                             ),
                           ),
                         ],
