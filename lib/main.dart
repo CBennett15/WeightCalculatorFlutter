@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'calculator.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Weight Calculator App',
       theme: ThemeData.dark(),
-      home: HomePage(),
+      home: Calculator(),
     );
   }
 }
