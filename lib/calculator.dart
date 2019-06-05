@@ -9,7 +9,7 @@ class Calculator extends StatefulWidget {
 class CalculatorState extends State<Calculator> {
   String result = "0";
   String weight = 'kg';
-  String equation = "";
+  String equation = "1+2";
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +35,17 @@ class CalculatorState extends State<Calculator> {
                       height: double.infinity,
                       width: double.infinity,
                       color: Colors.black,
+                    ),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                      child: Text(equation,
+                          style: TextStyle(fontSize: 50.0),
+                          textAlign: TextAlign.right),
+                      height: double.infinity,
+                      width: double.infinity,
+                      color: Colors.redAccent,
                     ),
                   ),
                   Flexible(
