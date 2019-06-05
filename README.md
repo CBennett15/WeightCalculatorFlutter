@@ -1,3 +1,3 @@
 # calc
 
-A new Flutter project.
+A new Flutter project in progress.
